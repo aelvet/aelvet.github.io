@@ -1,0 +1,55 @@
+# 忽略编译产生的文件或目录
+/build
+/dist
+/out
+
+# 忽略依赖目录
+/node_modules
+
+# 忽略系统文件
+.DS_Store
+Thumbs.db
+
+# 忽略日志文件
+*.log
+
+# 忽略临时文件
+*.tmp
+
+# 忽略编辑器配置文件
+.vscode/
+.idea/
+
+# 忽略个人配置文件
+config.js
+secrets.js
+
+# 忽略编译器或IDE生成的文件
+/.idea
+/.vscode
+
+# 忽略测试报告
+/coverage
+
+# 忽略缓存文件
+/.cache
+
+# 忽略生成的文件
+/generated
+
+# 忽略图片缓存
+*.png.cache
+
+# 忽略备份文件
+*.bak
+*.backup
+
+# 忽略压缩文件
+*.zip
+
+# 忽略日志目录
+/logs
+
+# 忽略备份目录
+/backup
+/old
