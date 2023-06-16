@@ -2,6 +2,7 @@
 /build
 /dist
 /out
+/.nuxt
 /.output
 
 # 忽略依赖目录
