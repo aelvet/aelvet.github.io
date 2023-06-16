@@ -1,0 +1,1 @@
+import{a as o,b as s,e,t as a,o as t}from"./entry.2cd24e6a.js";const n={},l=e("h2",null,"User Page",-1);function c(r,u){return t(),s("div",null,[l,e("h3",null,"group: "+a(r.$route.params.group),1),e("h3",null,"id: "+a(r.$route.params.id),1)])}const _=o(n,[["render",c]]);export{_ as default};
