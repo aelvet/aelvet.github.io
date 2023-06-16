@@ -61,3 +61,8 @@ yarn preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+## TIPS
+
+1. 部署到 github pages 时, 打包目录必须位于 docs 下
+2. github pages 无法识别 `_` 开头的文件
