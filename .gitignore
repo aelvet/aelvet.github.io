@@ -2,6 +2,7 @@
 /build
 /dist
 /out
+/.output
 
 # 忽略依赖目录
 /node_modules
