@@ -1,8 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  app: {
-    buildAssetsDir: '/static/'
-  },
+  // srcDir: 'src',
+  // app: {
+  //   buildAssetsDir: '/static/'
+  // },
   devtools: { enabled: true },
   // buildDir: 'docs'
 })
