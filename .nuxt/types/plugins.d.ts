@@ -6,11 +6,13 @@ type Decorate<T extends Record<string, any>> = { [K in keyof T as K extends stri
 type InjectionType<A extends Plugin> = A extends Plugin<infer T> ? Decorate<T> : unknown
 
 type NuxtAppInjections = 
-  InjectionType<typeof import("../../node_modules/nuxt/dist/app/plugins/revive-payload.server").default> &
-  InjectionType<typeof import("../../node_modules/nuxt/dist/app/plugins/revive-payload.client").default> &
-  InjectionType<typeof import("../../node_modules/nuxt/dist/head/runtime/plugins/unhead").default> &
-  InjectionType<typeof import("../../node_modules/nuxt/dist/app/plugins/router").default> &
-  InjectionType<typeof import("../../node_modules/nuxt/dist/app/plugins/chunk-reload.client").default>
+  InjectionType<typeof import("../../node_modules/.pnpm/nuxt@3.5.2_@types+node@18.0.0_sass@1.63.5/node_modules/nuxt/dist/app/plugins/revive-payload.server").default> &
+  InjectionType<typeof import("../../node_modules/.pnpm/nuxt@3.5.2_@types+node@18.0.0_sass@1.63.5/node_modules/nuxt/dist/app/plugins/revive-payload.client").default> &
+  InjectionType<typeof import("../../node_modules/.pnpm/nuxt@3.5.2_@types+node@18.0.0_sass@1.63.5/node_modules/nuxt/dist/head/runtime/plugins/unhead").default> &
+  InjectionType<typeof import("../../node_modules/.pnpm/nuxt@3.5.2_@types+node@18.0.0_sass@1.63.5/node_modules/nuxt/dist/app/plugins/router").default> &
+  InjectionType<typeof import("../../node_modules/.pnpm/@nuxt+devtools@0.6.1_nuxt@3.5.2_vite@4.3.9/node_modules/@nuxt/devtools/dist/runtime/plugins/devtools.server").default> &
+  InjectionType<typeof import("../../node_modules/.pnpm/@nuxt+devtools@0.6.1_nuxt@3.5.2_vite@4.3.9/node_modules/@nuxt/devtools/dist/runtime/plugins/devtools.client").default> &
+  InjectionType<typeof import("../../node_modules/.pnpm/nuxt@3.5.2_@types+node@18.0.0_sass@1.63.5/node_modules/nuxt/dist/app/plugins/chunk-reload.client").default>
 
 declare module '#app' {
   interface NuxtApp extends NuxtAppInjections { }
