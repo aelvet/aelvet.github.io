@@ -1,0 +1,18 @@
+// @import 'element-plus/theme-chalk/dark/css-vars.css';
+
+:focus-visible {
+  outline: none;
+}
+
+.el-table {
+  .disable-row {
+    color: var(--el-text-color-disabled);
+  }
+}
+.el-pagination {
+  flex-wrap: wrap;
+}
+
+.el-pagination__rightwrapper {
+  flex-wrap: wrap;
+}
